@@ -8,12 +8,12 @@ jobs:
     steps:
       - name: Echo a String
         run: echo "Hello World"
-      - name: Multiline Script
+      - name: Display Software Versions
         run: |
           node -v
           npm -v
-      - name: Python Command
+      - name: Use Python
         run: |
           import platform
-          print(platform.processor())
+          print(platform.platform())
         shell: python
